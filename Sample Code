@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        int a = 200;
+        string ks ;
+        string bs;
+
+
+        public Program()//Construcutor
+            {
+            Console.WriteLine("Console starts here:");
+
+            }
+
+
+        public Program(string firstname , string lastname, int rnumber  )  //Constructor Overload (if in class more than one constructor is there then we call it constructor overload
+        {
+            a = rnumber;
+            ks = lastname;
+            bs = firstname;
+        }
+        static void Main(string[] args)
+        {
+            Program p1 = new Program("Sagar","Chougule",123);
+
+            Program p2 = new Program("Vali", "Vastu", 345);
+            
+
+            Console.WriteLine(p1.a);
+            
+
+            Console.ReadLine();
+        }
+    }
+}
